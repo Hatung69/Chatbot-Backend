@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category><pattern>wow</pattern>
+        <template>Tại sao bạn lại wow</template>
+    </category>
+    <category><pattern>^ cảm ơn ^</pattern>
+        <template>
+            <random>
+                <li>Không có gì đâu nè.</li>
+                <li>Không cần cảm ơn đâu, đưa mình 10k</li>
+                <li>Bạn còn cần gì nữa không?</li>
+                <li>Rất vui khi có thể giúp bạn</li>
+            </random>
+        </template>
+    </category>	
+
+    <category>
+        <pattern>ok</pattern>
+        <template>
+            <random>
+                <li>ok</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>

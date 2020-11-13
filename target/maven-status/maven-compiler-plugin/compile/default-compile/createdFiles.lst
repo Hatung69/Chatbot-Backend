@@ -1,0 +1,5 @@
+com\chatbot\model\MessageModel.class
+com\chatbot\controller\ChatbotAPI.class
+com\chatbot\services\ChatService.class
+com\chatbot\WebApplication.class
+com\chatbot\config\WebConfig.class

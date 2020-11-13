@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+	    <pattern>*</pattern>
+	    <template>
+            <random>
+                <li>Ý bạn là phòng đào tạo?</li>
+                <li>Bạn đang cần tiền?</li>                
+                <li>Bạn muốn biết về chủ đề gì nào?</li>
+                <li>Bạn muốn biết về đăng ký học phần sao?</li>
+                <li>Bạn đang tò mò về quỹ khuyến học?</li>
+                <li>Bạn muốn biết về chuẩn ngoại ngữ phải không?</li>
+
+                <li>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học?</li>
+                <li>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao?</li>
+                <li>Mình đoán là bạn muốn biết về vấn đề đóng học phí!</li>
+            </random>
+        </template>
+	</category>
+
+    <category><pattern>NA</pattern>
+        <template>
+            <random>
+                <li>Vậy chứ bạn muốn biết gì?</li>
+                <li>Để suy nghĩ xem nào...</li>
+                <li>Vậy là gì nhỉ?</li>
+                <li>Bạn là một con người thật khó đoán</li>
+                <li>Không sao, có lẽ chúng ta cần thời gian để hiểu nhau hơn</li>
+                <li>Luôn có những khó khăn trong việc hiểu suy nghĩ của người khác mà</li>
+                <li>Bạn có muốn nói rõ hơn cho mình không?</li>
+                <li>Đố bạn làm cho mình biết bạn đang nghĩ gì đó</li>
+                <li>Ây cha, không phải sao...</li>
+                <li>Mình nghĩ là mình biết bạn cần gì rồi</li>
+            </random>
+        </template>
+    </category>	
+    <category>
+        <pattern>*</pattern>
+        <that>Mình nghĩ là mình biết bạn cần gì rồi</that>
+        <template>Mình không biết</template>
+    </category>	
+
+    <!--Ý bạn là phòng đào tạo-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Ý bạn là phòng đào tạo</that>
+        <template><srai>phòng đào tạo</srai></template>
+    </category>	
+    <category>
+        <pattern>Không</pattern>
+        <that>Ý bạn là phòng đào tạo</that>
+        <template><srai>NA</srai></template>
+    </category>	
+    
+
+    <!--Bạn đang cần tiền-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Bạn đang cần tiền</that>
+        <template>Vậy thì bạn nên tìm hiều về học bổng rồi. Gõ thử "học bổng" xem nào!</template>
+    </category>	
+    <category>
+        <pattern>Không</pattern>
+        <that>Bạn đang cần tiền</that>
+        <template><srai>NA</srai></template>
+    </category>	
+
+    <!--Bạn muốn biết về đăng ký học phần sao-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Bạn muốn biết về đăng ký học phần sao</that>
+        <template><srai>đăng ký học phần là gì</srai></template>
+    </category>	
+    <category>
+        <pattern>Không</pattern>
+        <that>Bạn muốn biết về đăng ký học phần sao</that>
+        <template><srai>NA</srai></template>
+    </category>
+
+    <!--Bạn đang tò mò về quỹ khuyến học-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Bạn đang tò mò về quỹ khuyến học</that>
+        <template><srai>Hội phí quỹ khuyến học</srai></template>
+    </category>	
+    <category>
+        <pattern>Không</pattern>
+        <that>Bạn đang tò mò về quỹ khuyến học</that>
+        <template><srai>NA</srai></template>
+    </category>
+
+    <!--Bạn muốn biết về chuẩn ngoại ngữ phải không-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
+        <template><srai>Chuẩn đầu ra ngoại ngữ là gì</srai></template>
+    </category>	
+    <category>
+        <pattern>Không</pattern>
+        <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
+        <template><srai>NA</srai></template>
+    </category>
+
+    
+    <category><pattern></pattern><template></template></category>	
+    <category><pattern></pattern><template></template></category>	
+    <category><pattern></pattern><template></template></category>	
+
+	<category><pattern></pattern><template><srai></srai></template></category>
+
+    
+
+
+
+</aiml>
