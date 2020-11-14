@@ -12,13 +12,16 @@ import com.chatbot.model.MessageModel;
 @Service
 public class ChatService {
 	
-	private Chat chatSession;
 	@Autowired
 	private Bot alice;
+	@Autowired
+	private Chat chatSession;
+	
+	public ChatService() {
+	}
 	
 	public MessageModel response(String textAsk) {
 		MessageModel messageModel = new MessageModel();
-		chatSession = new Chat(alice);
 		try {
 			messageModel.setContent(chatSession.multisentenceRespond(textAsk));
 			messageModel.setTimestamp(new Date());
