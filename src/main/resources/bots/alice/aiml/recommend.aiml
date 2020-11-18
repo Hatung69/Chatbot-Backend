@@ -11,17 +11,14 @@
                 <li>Bạn muốn biết về đăng ký học phần sao?</li>
                 <li>Bạn đang tò mò về quỹ khuyến học?</li>
                 <li>Bạn muốn biết về chuẩn ngoại ngữ phải không?</li>
-
                 <li>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học?</li>
                 <li>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao?</li>
                 <li>Mình đoán là bạn muốn biết về vấn đề đóng học phí!</li>
-                <li></li>
-                <li></li>
             </random>
         </template>
 	</category>
 
-    <category><pattern>NA</pattern>
+    <category><pattern>N123A</pattern>
         <template>
             <random>
                 <li>Vậy chứ bạn muốn biết gì?</li>
@@ -40,7 +37,7 @@
     <category>
         <pattern>*</pattern>
         <that>Mình nghĩ là mình biết bạn cần gì rồi</that>
-        <template>Mình không biết</template>
+        <template>Mình không biết, mình nói chơi thôi</template>
     </category>	
 
     <!--Ý bạn là phòng đào tạo-->
@@ -51,9 +48,24 @@
         <template><srai>phòng đào tạo</srai></template>
     </category>	
     <category>
-        <pattern>Không</pattern>
+        <pattern>Chuẩn</pattern>
         <that>Ý bạn là phòng đào tạo</that>
-        <template><srai>NA</srai></template>
+        <template><srai>phòng đào tạo</srai></template>
+    </category>	
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Ý bạn là phòng đào tạo</that>
+        <template><srai>phòng đào tạo</srai></template>
+    </category>	
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Ý bạn là phòng đào tạo</that>
+        <template><srai>phòng đào tạo</srai></template>
+    </category>	
+    <category>
+        <pattern>*</pattern>
+        <that>Ý bạn là phòng đào tạo</that>
+        <template><srai>N123A</srai></template>
     </category>	
     
 
@@ -65,9 +77,24 @@
         <template>Vậy thì bạn nên tìm hiều về học bổng rồi. Gõ thử "học bổng" xem nào!</template>
     </category>	
     <category>
-        <pattern>Không</pattern>
+        <pattern>Chuẩn</pattern>
         <that>Bạn đang cần tiền</that>
-        <template><srai>NA</srai></template>
+        <template>Vậy thì bạn nên tìm hiều về học bổng rồi. Gõ thử "học bổng" xem nào!</template>
+    </category>	
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Bạn đang cần tiền</that>
+        <template>Vậy thì bạn nên tìm hiều về học bổng rồi. Gõ thử "học bổng" xem nào!</template>
+    </category>	
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Bạn đang cần tiền</that>
+        <template>Vậy thì bạn nên tìm hiều về học bổng rồi. Gõ thử "học bổng" xem nào!</template>
+    </category>	
+    <category>
+        <pattern>*</pattern>
+        <that>Bạn đang cần tiền</that>
+        <template><srai>N123A</srai></template>
     </category>	
 
     <!--Bạn muốn biết về đăng ký học phần sao-->
@@ -78,9 +105,24 @@
         <template><srai>đăng ký học phần là gì</srai></template>
     </category>	
     <category>
-        <pattern>Không</pattern>
+        <pattern>Chuẩn</pattern>
         <that>Bạn muốn biết về đăng ký học phần sao</that>
-        <template><srai>NA</srai></template>
+        <template><srai>đăng ký học phần là gì</srai></template>
+    </category>	
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Bạn muốn biết về đăng ký học phần sao</that>
+        <template><srai>đăng ký học phần là gì</srai></template>
+    </category>	
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Bạn muốn biết về đăng ký học phần sao</that>
+        <template><srai>đăng ký học phần là gì</srai></template>
+    </category>	
+    <category>
+        <pattern>*</pattern>
+        <that>Bạn muốn biết về đăng ký học phần sao</that>
+        <template><srai>N123A</srai></template>
     </category>
 
     <!--Bạn đang tò mò về quỹ khuyến học-->
@@ -91,9 +133,24 @@
         <template><srai>Hội phí quỹ khuyến học</srai></template>
     </category>	
     <category>
-        <pattern>Không</pattern>
+        <pattern>Chuẩn</pattern>
         <that>Bạn đang tò mò về quỹ khuyến học</that>
-        <template><srai>NA</srai></template>
+        <template><srai>Hội phí quỹ khuyến học</srai></template>
+    </category>	
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Bạn đang tò mò về quỹ khuyến học</that>
+        <template><srai>Hội phí quỹ khuyến học</srai></template>
+    </category>	
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Bạn đang tò mò về quỹ khuyến học</that>
+        <template><srai>Hội phí quỹ khuyến học</srai></template>
+    </category>	
+    <category>
+        <pattern>*</pattern>
+        <that>Bạn đang tò mò về quỹ khuyến học</that>
+        <template><srai>N123A</srai></template>
     </category>
 
     <!--Bạn muốn biết về chuẩn ngoại ngữ phải không-->
@@ -102,17 +159,186 @@
         <pattern>Đúng</pattern>
         <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
         <template><srai>Chuẩn đầu ra ngoại ngữ là gì</srai></template>
-    </category>	
+    </category>
     <category>
-        <pattern>Không</pattern>
+        <pattern>Chuẩn</pattern>
         <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
-        <template><srai>NA</srai></template>
+        <template><srai>Chuẩn đầu ra ngoại ngữ là gì</srai></template>
+    </category>
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
+        <template><srai>Chuẩn đầu ra ngoại ngữ là gì</srai></template>
+    </category>
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
+        <template><srai>Chuẩn đầu ra ngoại ngữ là gì</srai></template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <that>Bạn muốn biết về chuẩn ngoại ngữ phải không</that>
+        <template><srai>N123A</srai></template>
     </category>
 
-    
-    <category><pattern></pattern><template></template></category>	
-    <category><pattern></pattern><template></template></category>	
-    <category><pattern></pattern><template></template></category>	
+    <!--Có phải bạn đang cần tìm hiểu về chứng chỉ tin học-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học</that>
+        <template><srai>Chứng chỉ ứng dụng công nghệ thông tin là gì</srai></template>
+    </category>
+    <category>
+        <pattern>Chuẩn</pattern>
+        <that>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học</that>
+        <template><srai>Chứng chỉ ứng dụng công nghệ thông tin là gì</srai></template>
+    </category>
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học</that>
+        <template><srai>Chứng chỉ ứng dụng công nghệ thông tin là gì</srai></template>
+    </category>
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học</that>
+        <template><srai>Chứng chỉ ứng dụng công nghệ thông tin là gì</srai></template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <that>Có phải bạn đang cần tìm hiểu về chứng chỉ tin học</that>
+        <template><srai>N123A</srai></template>
+    </category>
+
+    <!--Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao</that>
+        <template><srai>Hỗ trợ học phí</srai></template>
+    </category>
+    <category>
+        <pattern>Chuẩn</pattern>
+        <that>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao</that>
+        <template><srai>Hỗ trợ học phí</srai></template>
+    </category>
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao</that>
+        <template><srai>Hỗ trợ học phí</srai></template>
+    </category>
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao</that>
+        <template><srai>Hỗ trợ học phí</srai></template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <that>Bạn muốn tìn hiểu về vấn đề hỗ trợ học phí sao</that>
+        <template><srai>N123A</srai></template>
+    </category>
+
+    <!--Mình đoán là bạn muốn biết về vấn đề đóng học phí-->
+
+    <category>
+        <pattern>Đúng</pattern>
+        <that>Mình đoán là bạn muốn biết về vấn đề đóng học phí</that>
+        <template><srai>^ ĐÓNG HỌC PHÍ ^</srai></template>
+    </category>
+    <category>
+        <pattern>Chính xác</pattern>
+        <that>Mình đoán là bạn muốn biết về vấn đề đóng học phí</that>
+        <template><srai>^ ĐÓNG HỌC PHÍ ^</srai></template>
+    </category>
+    <category>
+        <pattern>Ừa</pattern>
+        <that>Mình đoán là bạn muốn biết về vấn đề đóng học phí</that>
+        <template><srai>^ ĐÓNG HỌC PHÍ ^</srai></template>
+    </category>
+    <category>
+        <pattern>Chuẩn</pattern>
+        <that>Mình đoán là bạn muốn biết về vấn đề đóng học phí</that>
+        <template><srai>^ ĐÓNG HỌC PHÍ ^</srai></template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <that>Mình đoán là bạn muốn biết về vấn đề đóng học phí</that>
+        <template><srai>N123A</srai></template>
+    </category>
+
+
+    <category><pattern>1</pattern><template>1 năm học có 2 học kì</template></category>	
+    <category><pattern>2</pattern><template>Có 2 học kì trong 1 năm học</template></category>	
+    <category><pattern>3</pattern><template>Trong trường tồn tại 3 trung tâm</template></category>	
+    <category><pattern>4</pattern><template>Thang điểm 4 là một thứ gì đó đặc biệt</template></category>	
+    <category><pattern>5</pattern><template>Những con người tạo ra mình là sinh viên khóa 5 đó nha</template></category>	
+    <category><pattern>6</pattern><template>Tiết 6 là tiết đầu tiên của buổi chiều</template></category>	
+    <category><pattern>7</pattern><template>Hiện tại trường có 7 khoa, 7 phòng ban</template></category>	
+    <category><pattern>8</pattern><template>Vào năm 2020 trường có số khóa hiện tại là 8 (K8)</template></category>	
+    <category><pattern>9</pattern><template>9 điểm là giỏi rồi</template></category>	
+    <category><pattern>10</pattern><template>Chúc bạn được 10 điểm</template></category>	
+    <category><pattern>13</pattern><template>Có thể bạn không biết nhưng một ngày có 13 tiết học tại trường</template></category>	
+    <category><pattern>16</pattern><template><srai>trường có bao nhiêu ngành học</srai></template></category>	
+    <category><pattern>50</pattern><template>Thời gian mỗi tiết là 50 phút đó nha</template></category>
+    <category><pattern>ĐÀO</pattern><template>Đào tạo</template></category>
+    <category><pattern>TẠO</pattern><template>Đào tạo</template></category>
+    <category><pattern>HỌC</pattern><template>Học phí, học phần, học kỳ, học bổng, nghỉ học</template></category>
+    <category><pattern>HỖ</pattern><template>Hỗ trợ</template></category>
+    <category><pattern>TRỢ</pattern><template>Hỗ trợ</template></category>
+    <category><pattern>ĐÓNG</pattern><template>Đóng học phí</template></category>
+    <category><pattern>BỔNG</pattern><template>Học bổng</template></category>
+    <category><pattern>PHẦN</pattern><template>Học phần</template></category>
+    <category><pattern>PHÍ</pattern><template>Học phí</template></category>
+    <category><pattern>CẤM</pattern><template>Cấm thi</template></category>
+    <category><pattern>HỘ</pattern><template>Thi hộ</template></category>
+    <category><pattern>THI</pattern><template>Thi hộ, cấm thi, thi học phần</template></category>
+    <category><pattern>TỐT</pattern><template>Tốt nghiệp</template></category>
+    <category><pattern>NGHIỆP</pattern><template><srai>TỐT</srai></template></category>
+    <category><pattern>TRUNG</pattern><template>Trung tâm</template></category>
+    <category><pattern>TÂM</pattern><template>Trung tâm</template></category>
+    <category><pattern>NGÀNH</pattern><template>Ngành đào tạo</template></category>
+    <category><pattern>QUẢN</pattern><template>Quản lí</template></category>
+    <category><pattern>LÍ</pattern><template>Quản lí</template></category>
+    <category><pattern>KỸ</pattern><template>Kỹ thuật</template></category>
+    <category><pattern>THUẬT</pattern><template>Kỹ thuật</template></category>
+    <category><pattern>KHOA</pattern><template>KHOA</template></category>
+    <category><pattern>PHÒNG</pattern><template>Phòng ban</template></category>
+    <category><pattern>BAN</pattern><template>Phòng ban</template></category>
+    <category><pattern>PHẦN</pattern><template>Phầm mềm</template></category>
+    <category><pattern>MỀM</pattern><template>Soft</template></category>
+    <category><pattern>Logistics</pattern><template>Logistics</template></category>
+    <category><pattern>ON</pattern><template>Online</template></category>
+    <category><pattern>MAIL</pattern><template>Mail giảng viên, mail sinh viên</template></category>
+    <category><pattern>SINH</pattern><template>Sinh viên</template></category>
+    <category><pattern>VIÊN</pattern><template>Giảng viên, sinh viên</template></category>
+    <category><pattern>GIẢNG</pattern><template>Giảng viên</template></category>
+    <category><pattern>QUỸ</pattern><template>Quỹ khuyến học</template></category>
+    <category><pattern>QUỶ</pattern><template>Quỷ xứ</template></category>
+    <category><pattern>KHUYẾN</pattern><template>Quỹ khuyến học, học bổng khuyến khích</template></category>
+    <category><pattern>ĐĂNG</pattern><template>Đăng kí</template></category>
+    <category><pattern>NGOẠI</pattern><template>Ngoại ngữ</template></category>
+    <category><pattern>NGỮ</pattern><template>Ngoại ngữ</template></category>
+    <category><pattern>TIN</pattern><template>Tin học, Công nghệ thông tin</template></category>
+    <category><pattern>CHỨNG</pattern><template>Chứng chỉ ngoại ngữ, chứng chỉ kỹ năng sử dụng công nghệ thông tin</template></category>
+    <category><pattern>CHỈ</pattern><template>Chứng chỉ ngoại ngữ, chứng chỉ kỹ năng sử dụng công nghệ thông tin</template></category>
+    <category><pattern>KHÓ</pattern><template>Khó khăn</template></category>
+    <category><pattern>KHĂN</pattern><template>Khó khăn</template></category>
+    <category><pattern>GIÁ</pattern><template>Giá trị học bổng</template></category>
+    <category><pattern>TRUNG</pattern><template>Trung tâm</template></category>
+    <category><pattern>TÂM</pattern><template>Trung tâm</template></category>
+    <category><pattern>TÂM</pattern><template>Trung tâm</template></category>
+    <category><pattern>NGHỈ</pattern><template>Nghỉ học</template></category>
+    <category><pattern>THỜI</pattern><template>Thời gian ôn thi, thời gian học, Thời gian học chương trình thứ hai</template></category>
+    <category><pattern>GIAN</pattern><template>Thời gian ôn thi</template></category>
+    <category><pattern>LUẬN</pattern><template>Luận văn, tiểu luận</template></category>
+    <category><pattern>VĂN</pattern><template>Luận văn, tiểu luận</template></category>
+    <category><pattern>ĐỒ</pattern><template>Đồ án</template></category>
+    <category><pattern>ÁN</pattern><template>Đồ án</template></category>
+    <category><pattern>ÁN</pattern><template>Đồ án</template></category>
+    <category><pattern>VI</pattern><template>Vi phạm</template></category>
+    <category><pattern>PHẠM</pattern><template>Vi phạm</template></category>
+    <category><pattern>GIỚI</pattern><template>Giới thiệu trường</template></category>
+    <category><pattern>THIỆU</pattern><template>Giới thiệu trường</template></category>
+    <category><pattern>TRƯỜNG</pattern><template>Giới thiệu trường</template></category>
 
 	<category><pattern></pattern><template><srai></srai></template></category>
 
