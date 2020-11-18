@@ -25,6 +25,7 @@ public class ChatService {
 		try {
 			messageModel.setContent(chatSession.multisentenceRespond(textAsk));
 			messageModel.setTimestamp(new Date());
+			System.out.println(chatSession.multisentenceRespond(textAsk));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
