@@ -17,4 +17,9 @@ public class WebConfig {
 	public Chat chatSession() {
 		return new Chat(alice());
 	}
+	
+	@Bean
+	public String textAskTemp() {
+		return "";
+	}
 }
