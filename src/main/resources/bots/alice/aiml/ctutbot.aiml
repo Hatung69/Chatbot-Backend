@@ -41,16 +41,78 @@
 	<category><pattern>Hãy nói theo tôi *</pattern><template><star/>.</template></category>
 	<category><pattern>* tên là *</pattern><template>Chào <set name="username"><star index="2"/></set>.</template></category>
 		
+	<category>
+		<pattern>TỪ KHÓA</pattern>
+		<template><think><set name="topic">default</set></think>Nếu không biết phải nói gì, bạn có thể tìm kiếm theo các từ khóa sau:
+		<br/>1. Quỹ khuyến học
+		<br/>2. Đăng ký học phần
+		<br/>3. Chứng chỉ
+		<br/>4. Hỗ trợ học phí
+		<br/>5. Đóng học phí
+		<br/>6. Học bổng
+		<br/>7. Cấu trúc mail CTUT
+		<br/>8. Đào tạo
+		<br/>9. Rút học phần
+		<br/>10. Đăng ký học lại
+		<br/>11. Nghĩ học
+		<br/>12. Xếp hạng năm đào tạo
+		<br/>13. Xếp loại học lực
+		<br/>14. Nghỉ học tạm thời
+		<br/>15. Cảnh báo học vụ
+		<br/>16. Đình chỉ học vụ
+		<br/>17. Buộc thôi học
+		<br/>18. Học song ngành
+		<br/>19. Chuyển trường
+		<br/>20. Kiểm tra và thi học phần
+		<br/>21. Xét và công nhận tốt nghiệp
+		<br/>22. Xử lí vi phạm
+		<br/>23. Giới thiệu trường
+		<br/>24. Phòng ban
+		<br/>25. Khoa
+		<br/>26. Trung tâm
+		</template>
+	</category>
+	<topic name="default">
+		<category><pattern>1</pattern><template><srai>Quỹ khuyến học</srai></template></category>
+		<category><pattern>2</pattern><template><srai>Đăng ký học phần</srai></template></category>
+		<category><pattern>3</pattern><template><srai>Chứng chỉ</srai></template></category>
+		<category><pattern>4</pattern><template><srai>Hỗ trợ học phí</srai></template></category>
+		<category><pattern>5</pattern><template><srai>Đóng học phí</srai></template></category>
+		<category><pattern>6</pattern><template><srai>Học bổng</srai></template></category>
+		<category><pattern>7</pattern><template><srai>Cấu trúc mail CTUT</srai></template></category>
+		<category><pattern>8</pattern><template><srai>Đào tạo</srai></template></category>
+		<category><pattern>9</pattern><template><srai>Rút học phần</srai></template></category>
+		<category><pattern>10</pattern><template><srai>Đăng ký học lại</srai></template></category>
+		<category><pattern>11</pattern><template><srai>Nghĩ học</srai></template></category>
+		<category><pattern>12</pattern><template><srai>Xếp hạng năm đào tạo</srai></template></category>
+		<category><pattern>13</pattern><template><srai>Xếp loại học lực</srai></template></category>
+		<category><pattern>14</pattern><template><srai>Nghỉ học tạm thời</srai></template></category>
+		<category><pattern>15</pattern><template><srai>Cảnh báo học vụ</srai></template></category>
+		<category><pattern>16</pattern><template><srai>Đình chỉ học vụ</srai></template></category>
+		<category><pattern>17</pattern><template><srai>Buộc thôi học</srai></template></category>
+		<category><pattern>18</pattern><template><srai>Học song ngành</srai></template></category>
+		<category><pattern>19</pattern><template><srai>Chuyển trường</srai></template></category>
+		<category><pattern>20</pattern><template><srai>Kiểm tra và thi học phần</srai></template></category>
+		<category><pattern>21</pattern><template><srai>Xét và công nhận tốt nghiệp</srai></template></category>
+		<category><pattern>22</pattern><template><srai>Xử lí vi phạm</srai></template></category>
+		<category><pattern>23</pattern><template><srai>Giới thiệu trường</srai></template></category>
+		<category><pattern>24</pattern><template><srai>Phòng ban</srai></template></category>
+		<category><pattern>25</pattern><template><srai>Khoa</srai></template></category>
+		<category><pattern>26</pattern><template><srai>Trung tâm</srai></template></category>
+    </topic>
+
+	<category><pattern>*</pattern><template><srai>TỪ KHÓA</srai></template></category>
+
 	<!--Quỹ khuyến học-->
 
 	<category>
 	    <pattern>Hội phí quỹ khuyến học</pattern>
 	    <template>Hội phí quỹ khuyến học 2000đ/tháng | 24000đ/năm</template>
 	</category>	
-	<category><pattern>QŨY KHUYẾN HỌC</pattern><template><srai>Hội phí quỹ khuyến học</srai></template></category>	
+	<category><pattern>QUỸ KHUYẾN HỌC</pattern><template><srai>Hội phí quỹ khuyến học</srai></template></category>	
 
 	<!-- Đăng kí học phần -->
-	<category><pattern>đăng ký</pattern><template>bạn muốn đăng ký gì nào?</template></category>
+	<category><pattern>^ đăng ký ^</pattern><template>bạn muốn đăng ký gì nào?</template></category>
 	<category>
 		<pattern>đăng ký học phần</pattern>
 		<that>bạn muốn đăng ký gì nào</that>
@@ -61,6 +123,7 @@
 		<that>bạn muốn đăng ký gì nào</that>
 		<template><srai>đăng ký học phần là gì</srai></template>
 	</category>
+	<category><pattern>^ đăng kí ^</pattern><template><srai>^ đăng ký ^</srai></template></category>
 	<category><pattern>đăng ký học phần là gì</pattern><template>Trước khi bắt đầu mỗi học kỳ, tùy theo khả năng và điều kiện học tập của bản thân, từng sinh viên phải đăng ký học các học phần dự định sẽ học trong học kỳ đó với phòng đào tạo của trường.<think><set name = "topic">Đăng ký học phần</set></think></template></category>
 	<category><pattern>* đăng ký học phần là gì</pattern><template><srai>đăng ký học phần là gì</srai></template></category>
 	<category><pattern>đăng ký học phần</pattern><template><srai>đăng ký học phần là gì</srai></template></category>
@@ -299,9 +362,15 @@
 	</topic>
 
 	<!--Mail sinh viên, mail giảng viên-->
-
+	<category><pattern>Cấu trúc mail CTUT</pattern><template>Bạn muốn biết <set name="topic">cấu trúc mail</set> sinh viên hay giảng viên?</template></category>
+	<topic name="cấu trúc mail">
+		<category><pattern>sinh viên</pattern><template><srai>Mail sinh viên có cấu trúc như thế nào</srai></template></category>
+		<category><pattern>giảng viên</pattern><template><srai>Mail giảng viên có cấu trúc như thế nào</srai></template></category>
+	</topic>
 	<category><pattern>Mail sinh viên có cấu trúc như thế nào</pattern><template>Ví dụ: Tên "Nguyễn Văn A" có mã lớp là "KTPM0217" thì mail sẽ có dạng "nva.ktpm0217@student.ctuet.edu.vn"</template></category>
+	<category><pattern>Mail sinh viên</pattern><template><srai>Mail sinh viên có cấu trúc như thế nào</srai></template></category>
 	<category><pattern>Mail giảng viên có cấu trúc như thế nào</pattern><template>Ví dụ: Tên "Nguyễn Văn A" thì mail sẽ có dạng "nva@ctuet.edu.vn"</template></category>
+	<category><pattern>Mail giảng viên</pattern><template><srai>Mail giảng viên có cấu trúc như thế nào</srai></template></category>
 
 	<!--Chương trình đào tạo-->
 	<category><pattern>Đào tạo</pattern><template><think><set name="topic">đào tạo</set></think>Bạn muốn biết gì về chương trình đào tạo nào?</template></category>
@@ -358,9 +427,7 @@
 	<category><pattern>Thời gian được phép rút học phần</pattern><template>Chậm nhất trước 03 ngày khi bắt đầu học kỳ: trường sẽ chuyển học phí học phần sang học kỳ kế tiếp.<br/>Ngoài thời gian quy định, học phần vẫn được giữ nguyên trong hệ thống và nếu sinh viên không lên lớp học, coi như tự ý bỏ học và phải nhận điểm F.<br/>Chậm nhất là tuần lễ thứ 8 của học kỳ chính và tuần lễ thứ 2 của học kỳ phụ: nếu nhận thấy việc học khó khăn có thể dẫn đến kết quả kém, sinh viên có thể rút bớt học phần đã đăng ký nhưng không được trả lại học phí.</template></category>
 	<category><pattern>Điều kiện rút bớt các học phần đã đăng ký</pattern><template>Sinh viên phải viết đơn gửi Phòng đào tạo của Trường. Được cán bộ giảng dạy phụ trách lớp học phần ký duyệt và cố vấn học tập chấp thuận. Đồng thời phải đảm bảo số tín chỉ tối thiểu của học kỳ.</template></category>
 	
-	<category><pattern>* rút học phần</pattern><template><srai>Rút học phần là gì</srai></template></category>
-	<category><pattern>* rút học phần *</pattern><template><srai>Rút học phần là gì</srai></template></category>
-	<category><pattern>rút học phần *</pattern><template><srai>Rút học phần là gì</srai></template></category>
+	<category><pattern>^ rút học phần ^</pattern><template><srai>Rút học phần là gì</srai></template></category>
 	<category><pattern>ĐIỀU KIỆN * RÚT HỌC PHẦN</pattern><template><srai>Điều kiện rút bớt các học phần đã đăng ký</srai></template></category>
 	<category><pattern>ĐIỀU KIỆN * RÚT HỌC PHẦN *</pattern><template><srai>Điều kiện rút bớt các học phần đã đăng ký</srai></template></category>
 	<category><pattern>* ĐIỀU KIỆN * RÚT HỌC PHẦN *</pattern><template><srai>Điều kiện rút bớt các học phần đã đăng ký</srai></template></category>
@@ -374,6 +441,8 @@
 
 	<!--Đăng ký học lại-->
 	<category><pattern>Trường hợp phải đăng kí học lại</pattern><template>Sinh viên có học phần bắt buộc bị điểm F phải đăng ký học lại học phần đó ở một trong các học kỳ tiếp theo cho đến khi đạt điểm A+, A, B+, B, C+, C, D+ hoặc D.<br/>Sinh viên có học phần tự chọn bị điểm F có thể đăng ký học lại học phần đó hoặc đổi sang học phần tự chọn tương đương khác.</template></category>
+	<category><pattern>^ ĐĂNG KÝ HỌC LẠI ^</pattern><template><srai>Trường hợp phải đăng kí học lại</srai></template></category>
+	<category><pattern>^ ĐĂNG KÍ HỌC LẠI ^</pattern><template><srai>Trường hợp phải đăng kí học lại</srai></template></category>
 	<category><pattern>^ học lại ^</pattern><template><srai>Trường hợp phải đăng kí học lại</srai>></template></category>
 	<category><pattern>Cải thiện điểm</pattern><template>Các học phần đã tích lũy ở mức điểm D, D+, C, C+, B, B+, sinh viên có thể đăng ký học lại để cải thiện kết quả. Điểm của học phần được tính vào điểm trung bình chung tích lũy sẽ là điểm cao nhất trong các lần học. Điểm của các lần học sẽ được thể hiện trên bảng điểm toàn khóa.</template></category>
 	<category><pattern>Học cải thiện</pattern><template>Các học phần đã tích lũy ở mức điểm D, D+, C, C+, B, B+, sinh viên có thể đăng ký học lại để cải thiện kết quả. Điểm của học phần được tính vào điểm trung bình chung tích lũy sẽ là điểm cao nhất trong các lần học. Điểm của các lần học sẽ được thể hiện trên bảng điểm toàn khóa.</template></category>
@@ -414,6 +483,7 @@
 	<!--Xếp loại học lực-->
 
 	<category><pattern>Học lực</pattern><template><think><set name="topic">học lực</set></think>Sau mỗi học kỳ, căn cứ vào điểm trung bình chung học kỳ, sinh viên được xếp loại học lực.</template></category>
+	<category><pattern>XẾP LOẠI HỌC LỰC</pattern><template><srai>Học lực</srai></template></category>
 	<category><pattern>Học lực xuất sắc</pattern><template>Điểm trung bình chung học kỳ từ 3.60 đến 4.00.</template></category>
 	<category><pattern>Học lực giỏi</pattern><template>Điểm trung bình chung học kỳ từ 3.20 đến 3.59.</template></category>
 	<category><pattern>Học lực khá</pattern><template>Điểm trung bình chung học kỳ từ 2.50 đến 3.19.</template></category>
@@ -433,6 +503,7 @@
 	<!--Nghĩ học tạm thời-->
 
 	<category><pattern>Nghĩ học tạm thời</pattern><template>Sinh viên có thể làm đơn xin phép nghỉ học tạm thời trong các trường hợp sau đây: được điều động vào các lực lượng vũ trang; Ốm đau, tai nạn phải điều trị trong thời gian dài (có xác nhận của cơ quan ý tế); Vì nhu cầu cá nhân (việc riêng chính đáng) trường hợp này chỉ giải quyết khi sinh viên đã học ít nhất 1 học kỳ ở trường, không rơi vào tình trạng bị buộc thôi học, và phải có điểm trung bình chung tích lũy không dưới 2.00, thời gian nghỉ học tạm thời trong trường hợp này được tính vào quỹ thời gian để hoàn thành chương trình đào tạo.</template></category>
+	<category><pattern>Nghỉ học tạm thời</pattern><template><srai>Nghĩ học tạm thời</srai></template></category>
 	
 	<!--Cảnh báo học vụ-->
 
@@ -495,8 +566,34 @@
 	
 	<!--Kiểm tra và thi học phần-->
 	
+	<category><pattern>KIỂM TRA VÀ THI HỌC PHẦN</pattern>
+		<template><think><set name="topic">Kiểm tra và thi học phần</set></think>
+			Bạn muốn biết về thông tin gì:
+			<br/>1. Cách tính điểm học phần
+			<br/>2. Thời gian ôn thi
+			<br/>3. Hình thức thi
+			<br/>4. Bảo quản bài thi
+			<br/>5. Thi vấn đáp
+			<br/>6. Vắng thi
+			<br/>7. Kỳ thi phụ
+			<br/>8. Cách tính điểm đánh giá
+			<br/>9. Cách tính điểm trung bình chung
+		</template>
+	</category>
+	<topic name="Kiểm tra và thi học phần">
+		<category><pattern>1</pattern><template><srai>Điểm học phần được tính như thế nào</srai></template></category>
+		<category><pattern>Cách tính điểm học phần</pattern><template><srai>Điểm học phần được tính như thế nào</srai></template></category>
+		<category><pattern>2</pattern><template><srai>Thời gian ôn thi</srai></template></category>
+		<category><pattern>3</pattern><template><srai>Hình thức thi</srai></template></category>
+		<category><pattern>4</pattern><template><srai>Bảo quản bài thi</srai></template></category>
+		<category><pattern>5</pattern><template><srai>Thi vấn đáp</srai></template></category>
+		<category><pattern>6</pattern><template><srai></srai>Vắng thi</template></category>
+		<category><pattern>7</pattern><template><srai>Kỳ thi phụ</srai></template></category>
+		<category><pattern>8</pattern><template><srai>Cách tính điểm đánh giá</srai></template></category>
+		<category><pattern>9</pattern><template><srai>Cách tính điểm trung bình chung</srai></template></category>
+	</topic>
 	<category><pattern>Điểm học phần được tính như thế nào</pattern>
-		<template>Tùy theo tính chất của học phần, điểm tổng hợp đánh giá học phần (ĐHP) được tính căn cứ vào một phần hoắc tất cả các điểm đánh giá bộ phận, bao gồm:
+		<template>Tùy theo tính chất của học phần, điểm tổng hợp đánh giá học phần (ĐHP) được tính căn cứ vào một phần hoặc tất cả các điểm đánh giá bộ phận, bao gồm:
 		<br/>- Điểm kiểm tra thường xuyên trong quá trình học tập
 		<br/>- Điểm đánh giá nhận thức và thái độ tham gia thảo luận
 		<br/>- Điểm đánh giá thực hành
@@ -514,7 +611,7 @@
 	<category><pattern>Thi vấn đáp</pattern><template>Thi vấn đáp kết thúc học phần phải do hai giảng viên thực hiện. Điểm thi vấn đáp được công bố công khai sau mỗi buổi thi.</template></category>
 	<category><pattern>Vắng thi</pattern><template>Sinh viên vắng mặt trong kỳ thi kết thúc học phần, nếu không có lý do chính đáng phải nhận điểm 0. Sinh viên phải đăng ký học lại học phần đó hoặc chuyển sang đăng ký học phần khác (nếu học phần tự chọn).</template></category>
 	<category><pattern>Kỳ thi phụ</pattern><template>Sinh viên vắng thi có lý do chính đáng ở kỳ thi chính, nếu được trưởng khoa cho phép, được dự thi ở kỳ thi phụ ngay sau đó (nếu có). Trường hợp không tổ chức kỳ thi phụ, sinh viên này sẽ được dự thi tại kỳ thi kết thúc học phần có mở ở học kỳ tiếp theo. Nếu sinh viên tiếp tục vắng thi, sinh viên phải đăng ký học lại học phần đó hoặc chuyển sang đăng ký học phần khác (nếu học phần tự chọn).</template></category>
-	<category><pattern>Cách tính điểm đánh giá </pattern>
+	<category><pattern>Cách tính điểm đánh giá</pattern>
 	<template>Điểm hệ số 10 - Điểm chữ - Xếp loại:
 	<br/>9.5 - 10, A+, Giỏi
 	<br/>8.5 - 9.4, A, Giỏi
@@ -542,7 +639,35 @@
 	<category><pattern>^ ĐIỂM TRUNG BÌNH CHUNG ^</pattern><template><srai>Cách tính điểm trung bình chung</srai></template></category>
 
 	<!--Xét và công nhận tốt nghiệp-->
+	<category><pattern>XÉT VÀ CÔNG NHẬN TỐT NGHIỆP</pattern>
+		<template><think><set name="topic">Xét và công nhận tốt nghiệp</set></think>
+			Bạn muốn biết về thông tin gì:
+			<br/>1. Thời gian làm luận văn tốt nghiệp
+			<br/>2. Đối tượng làm luận văn
+			<br/>3. Làm tiểu luận
+			<br/>4. Học thay thế
+			<br/>5. Thực tập tốt nghiệp
+			<br/>6. Điều kiện xét tốt nghiệp
+			<br/>7. Thời gian xét tốt nghiệp
+			<br/>8. Bằng tốt nghiệp
+			<br/>9. Loại bằng tốt nghiệp
+			<br/>10. Hạ loại tốt nghiệp
+		</template>
+	</category>
+	<topic name="Xét và công nhận tốt nghiệp">
+		<category><pattern>1</pattern><template><srai>THỜI GIAN LÀM LUẬN VĂN TỐT NGHIỆP</srai></template></category>
+		<category><pattern>2</pattern><template><srai>Đối tượng làm luận văn</srai></template></category>
+		<category><pattern>3</pattern><template><srai>Làm tiểu luận</srai></template></category>
+		<category><pattern>4</pattern><template><srai>Học thay thế</srai></template></category>
+		<category><pattern>5</pattern><template><srai>Thực tập tốt nghiệp</srai></template></category>
+		<category><pattern>6</pattern><template><srai>Điều kiện xét tốt nghiệp</srai></template></category>
+		<category><pattern>7</pattern><template><srai>Thời gian xét tốt nghiệp</srai></template></category>
+		<category><pattern>8</pattern><template><srai>Bằng tốt nghiệp</srai></template></category>
+		<category><pattern>9</pattern><template><srai>Loại bằng tốt nghiệp</srai></template></category>
+		<category><pattern>10</pattern><template><srai>Hạ loại tốt nghiệp</srai></template></category>
+	</topic>
 	<category><pattern>Thời gian làm khóa luận, luận văn tốt nghiệp hoặc làm tiểu luận tốt nghiệp</pattern><template>Đầu học kỳ cuối khóa, các sinh viên được phép đăng ký làm đồ án, khóa luận, luận văn tốt nghiệp hoặc làm tiểu luận tốt nghiệp và học thêm một số học phần chuyên môn được quy định.</template></category>
+	<category><pattern>THỜI GIAN LÀM LUẬN VĂN TỐT NGHIỆP</pattern><template><srai>Thời gian làm khóa luận, luận văn tốt nghiệp hoặc làm tiểu luận tốt nghiệp</srai></template></category>
 	<category><pattern>Đối tượng làm luận văn</pattern><template>Làm đồ án, khóa luận, luận văn tốt nghiệp: áp dụng cho sinh viên đạt mức quy định của trường. Đồ án tốt nghiệp, khóa luận, luận văn tốt nghiệp là học phần có khối lượng 10 tín chỉ cho trình độ đại học.</template></category>
 	<category><pattern>Làm tiểu luận</pattern><template>Làm tiểu luận tốt nghiệp, học và thi một số học phần chuyên môn: sinh viên không được giao làm đồ án, khóa luận, luận văn tốt nghiệp phải đăng ký làm tiểu luận tốt nghiệp 4 tín chỉ và học thêm một số học phần chuyên môn 6 tín chỉ.</template></category>
 	<category><pattern>Học thay thế</pattern><template>Nếu sinh viên không làm luận văn tốt nghiệp, tiểu luận tốt nghiệp thì phải học thay thế 10 tín chỉ trong nhóm học phần thay thế luận văn tốt nghiệp của chương trình đào tạo.</template></category>
@@ -570,7 +695,7 @@
 	<br/>b. Đã bị kỷ luật từ mức cảnh cáo trở lên trong thời gian học.
 	</template></category>
 
-	<category><pattern>Công nhập tốt nghiệp</pattern><template><srai>Điều kiện xét tốt nghiệp</srai></template></category>
+	<category><pattern>Công nhận tốt nghiệp</pattern><template><srai>Điều kiện xét tốt nghiệp</srai></template></category>
 	<category><pattern>bằng tốt nghiệp</pattern><template><srai>Loại bằng tốt nghiệp</srai></template></category>
 	<category><pattern>LÀM LUẬN VĂN</pattern><template><srai>Đối tượng làm luận văn</srai></template></category>
 	<category><pattern>LUẬN VĂN</pattern><template><srai>Đối tượng làm luận văn</srai></template></category>
@@ -579,6 +704,7 @@
 
 	<!--Xử lí vi phạm-->
 
+	<category><pattern>Xử lí vi phạm</pattern><template><srai>Vi phạm quy chế</srai></template></category>
 	<category><pattern>Vi phạm quy chế</pattern><template>Trong khi dự kiểm tra thường xuyên, chuẩn bị tiểu luận, bài tập lớn, thi giữa học phần, thi kết thúc học phần, chuẩn bị tiểu luận tốt nghiệp, luận văn tốt nghiệp, nếu vi phạm quy chế, sinh viên sẽ bị xử lý kỷ luật với từng học phần đã vi phạm.</template></category>
 	<category><pattern>Đi thi hộ</pattern><template>Sinh viên đi thi hộ hoặc nhờ người khác thi hộ, đều bị kỷ luật ở mức đình chỉ học tập một năm đối với trường hợp vi phạm lần thứ nhất và buộc thôi học đối với trường hợp vi phạm lần thứ hai.</template></category>
 	
@@ -703,17 +829,16 @@
 	<category><pattern>Trường có bao nhiêu khoa</pattern><template>Hiện tại trường đang có 7 khoa<think><set name="topic">khoa</set></think></template></category>
 	<category><pattern>Các khoa trong trường</pattern><template><srai>Trường có bao nhiêu khoa</srai></template></category>
 	<category><pattern>Liệt kê các khoa</pattern>
-		<template>
-			1.Công nghệ thông tin
-			<br/>2. Điện - Điện tử - Viễn thông
-			<br/>3. Kỹ thuật cơ khí
-			<br/>4. Kỹ thuật xây dựng
-			<br/>5. Quản lý công nghiệp
-			<br/>6. CN thực phẩm - CN sinh học
-			<br/>7. Khoa học cơ bản
+		<template>1.Công nghệ thông tin
+		<br/>2. Điện - Điện tử - Viễn thông
+		<br/>3. Kỹ thuật cơ khí
+		<br/>4. Kỹ thuật xây dựng
+		<br/>5. Quản lý công nghiệp
+		<br/>6. CN thực phẩm - CN sinh học
+		<br/>7. Khoa học cơ bản
 		</template>
 	</category>
-
+	<category><pattern>KHOA</pattern><template><srai>Trường có bao nhiêu khoa</srai></template></category>
 	<category><pattern>Công nghệ thông tin</pattern><template>Bạn có thể truy cập vào website http://khoacntt.ctuet.edu.vn/ để biết thêm thông tin chi tiết!</template></category>	
 	<category><pattern>Điện - Điện tử - Viễn thông</pattern><template>Bạn có thể truy cập vào website https://khoaddtvt.ctuet.edu.vn/ để biết thêm thông tin chi tiết!</template></category>	
 	<category><pattern>Kỹ thuật cơ khí</pattern><template>Bạn có thể truy cập vào website http://khoaktck.ctuet.edu.vn/ để biết thêm thông tin chi tiết!</template></category>	
