@@ -43,7 +43,7 @@
 		
 	<category>
 		<pattern>TỪ KHÓA</pattern>
-		<template><think><set name="topic">default</set></think>Nếu không biết phải nói gì, bạn có thể tìm kiếm theo các từ khóa sau:
+		<template><think><set name="topic">recommend</set></think>Nếu không biết phải nói gì, bạn có thể tìm kiếm theo các từ khóa sau:
 		<br/>1. Quỹ khuyến học
 		<br/>2. Đăng ký học phần
 		<br/>3. Chứng chỉ
@@ -72,7 +72,7 @@
 		<br/>26. Trung tâm
 		</template>
 	</category>
-	<topic name="default">
+	<topic name="recommend">
 		<category><pattern>1</pattern><template><srai>Quỹ khuyến học</srai></template></category>
 		<category><pattern>2</pattern><template><srai>Đăng ký học phần</srai></template></category>
 		<category><pattern>3</pattern><template><srai>Chứng chỉ</srai></template></category>
@@ -741,7 +741,7 @@
 
 	<category>
 	    <pattern>phòng đào tạo</pattern>
-	    <template>Bạn có thể truy cập vào Website: http://pdaotao.ctuet.edu.vn. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: http://pdaotao.ctuet.edu.vn Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* phòng đào tạo</pattern><template><srai>phòng đào tạo</srai></template></category>
 	<category><pattern>* phòng đào tạo *</pattern><template><srai>phòng đào tạo</srai></template></category>
@@ -749,7 +749,7 @@
 
 	<category>
 	    <pattern>Phòng công tác Chính trị và Quản lý sinh viên</pattern>
-	    <template>Bạn có thể truy cập vào Website: http://phongctct.ctuet.edu.vn/. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: http://phongctct.ctuet.edu.vn/ Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* Phòng công tác Chính trị và Quản lý sinh viên</pattern><template><srai>Phòng công tác Chính trị và Quản lý sinh viên</srai></template></category>
 	<category><pattern>* Phòng công tác Chính trị và Quản lý sinh viên *</pattern><template><srai>Phòng công tác Chính trị và Quản lý sinh viên</srai></template></category>
@@ -757,7 +757,7 @@
 
 	<category>
 	    <pattern>phòng nghiên cứu khoa học</pattern>
-	    <template>Bạn có thể truy cập vào Website: http://phongnckh.ctuet.edu.vn/. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: http://phongnckh.ctuet.edu.vn/ Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* phòng nghiên cứu khoa học</pattern><template><srai>phòng nghiên cứu khoa học</srai></template></category>
 	<category><pattern>* phòng nghiên cứu khoa học *</pattern><template><srai>phòng nghiên cứu khoa học</srai></template></category>
@@ -765,7 +765,7 @@
 
 	<category>
 	    <pattern>phòng đảm bảm chất lượng và khảo thí</pattern>
-	    <template>Bạn có thể truy cập vào Website: http://phongdbcl.ctuet.edu.vn/. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: http://phongdbcl.ctuet.edu.vn/ Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* phòng đảm bảm chất lượng và khảo thí</pattern><template><srai>phòng đảm bảm chất lượng và khảo thí</srai></template></category>
 	<category><pattern>* phòng đảm bảm chất lượng và khảo thí *</pattern><template><srai>phòng đảm bảm chất lượng và khảo thí</srai></template></category>
@@ -773,7 +773,7 @@
 	
 	<category>
 	    <pattern>phòng tổ chức hành chính</pattern>
-	    <template>Bạn có thể truy cập vào Website: https://ptchc.ctuet.edu.vn/. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: https://ptchc.ctuet.edu.vn/ Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* phòng tổ chức hành chính</pattern><template><srai>phòng tổ chức hành chính</srai></template></category>
 	<category><pattern>* phòng tổ chức hành chính *</pattern><template><srai>phòng tổ chức hành chính</srai></template></category>
@@ -781,7 +781,7 @@
 
 	<category>
 	    <pattern>phòng quản trị thiết bị</pattern>
-	    <template>Bạn có thể truy cập vào Website: http://phongqttb.ctuet.edu.vn/. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: http://phongqttb.ctuet.edu.vn/ Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* phòng quản trị thiết bị</pattern><template><srai>phòng quản trị thiết bị</srai></template></category>
 	<category><pattern>* phòng quản trị thiết bị *</pattern><template><srai>phòng quản trị thiết bị</srai></template></category>
@@ -789,7 +789,7 @@
 	
 	<category>
 	    <pattern>phòng tài chính kế toán</pattern>
-	    <template>Bạn có thể truy cập vào Website: https://phongtckt.ctuet.edu.vn/. Để tìm hiều thêm thông tin!</template>
+	    <template>Bạn có thể truy cập vào Website: https://phongtckt.ctuet.edu.vn/ Để tìm hiều thêm thông tin!</template>
 	</category>
 	<category><pattern>* phòng tài chính kế toán</pattern><template><srai>phòng tài chính kế toán</srai></template></category>
 	<category><pattern>* phòng tài chính kế toán *</pattern><template><srai>phòng tài chính kế toán</srai></template></category>

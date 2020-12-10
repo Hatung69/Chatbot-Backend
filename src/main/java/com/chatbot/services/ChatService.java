@@ -35,7 +35,7 @@ public class ChatService {
 			textAskTemp=textAsk;// Set biến String tạm = request để request tiếp còn Check :v
 			messageModel.setContent(chatSession.multisentenceRespond(textAsk));
 			messageModel.setTimestamp(new Date());
-			System.out.println(chatSession.multisentenceRespond(textAsk));
+//			System.out.println(chatSession.multisentenceRespond(textAsk));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
