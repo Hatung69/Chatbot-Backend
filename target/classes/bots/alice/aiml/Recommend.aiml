@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <category><pattern>HÃY NÓI CHO TÔI VÀI ĐIỀU THÚ VỊ</pattern><template><srai>FUNFACT</srai></template></category>
-    <category>
-            <pattern>FUNFACT</pattern>
-            <template>
-                <random>
-                    <li>1 năm học có 2 học kì</li>
-                    <li>Có 2 học kì trong 1 năm học</li>
-                    <li>Trong trường tồn tại 3 trung tâm</li>
-                    <li>Thang điểm 4 là một thứ gì đó đặc biệt</li>
-                    <li>Những con người tạo ra mình là sinh viên khóa 5 đó nha</li>
-                    <li>Tiết 6 là tiết đầu tiên của buổi chiều</li>
-                    <li>Hiện tại trường có 7 khoa, 7 phòng ban</li>
-                    <li>Vào năm 2020 trường có số khóa hiện tại là 8 (K8)</li>
-                    <li>Có thể bạn không biết nhưng một ngày có 13 tiết học tại trường</li>
-                    <li>Trường hiện tại đang có 16 ngành học</li>
-                    <li>Thời gian mỗi tiết là 50 phút đó nha</li>
-                </random>
-            </template>
-    </category>
+    <topic name="default">
+        <category><pattern>1</pattern><template>1 năm học có 2 học kì</template></category>	
+        <category><pattern>2</pattern><template>Có 2 học kì trong 1 năm học</template></category>	
+        <category><pattern>3</pattern><template>Trong trường tồn tại 3 trung tâm</template></category>	
+        <category><pattern>4</pattern><template>Thang điểm 4 là một thứ gì đó đặc biệt</template></category>	
+        <category><pattern>5</pattern><template>Những con người tạo ra mình là sinh viên khóa 5 đó nha</template></category>	
+        <category><pattern>6</pattern><template>Tiết 6 là tiết đầu tiên của buổi chiều</template></category>	
+        <category><pattern>7</pattern><template>Hiện tại trường có 7 khoa, 7 phòng ban</template></category>	
+        <category><pattern>8</pattern><template>Vào năm 2020 trường có số khóa hiện tại là 8 (K8)</template></category>	
+        <category><pattern>9</pattern><template>9 điểm là giỏi rồi</template></category>	
+        <category><pattern>10</pattern><template>Chúc bạn được 10 điểm</template></category>	
+        <category><pattern>13</pattern><template>Có thể bạn không biết nhưng một ngày có 13 tiết học tại trường</template></category>	
+        <category><pattern>16</pattern><template><srai>trường có bao nhiêu ngành học</srai></template></category>	
+        <category><pattern>50</pattern><template>Thời gian mỗi tiết là 50 phút đó nha</template></category>
+    </topic>
     <category><pattern>ĐÀO</pattern><template>Đào tạo</template></category>
     <category><pattern>TẠO</pattern><template>Đào tạo</template></category>
     <category><pattern>HỌC</pattern><template>Học phí, học phần, học kỳ, học bổng, nghỉ học</template></category>
